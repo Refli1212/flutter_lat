@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_lat1/Tugas.dart';
-import 'package:flutter_lat1/home_page.dart';
 
 //import 'layouting_example.dart';
 
