@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class DialogWiget extends StatefulWidget {
-  const DialogWiget({Key? key}) : super(key: key);
+  const DialogWiget({super.key});
 
   @override
   State<DialogWiget> createState() => _DialogWigetState();
@@ -26,9 +26,9 @@ class _DialogWigetState extends State<DialogWiget> {
                   builder: (BuildContext context) {
                     return AlertDialog(
                       title: const Text('Info'),
-                      content: SingleChildScrollView(
+                      content: const SingleChildScrollView(
                         child: ListBody(
-                          children: const [
+                          children: [
                             Text('Your order was placed!'),
                           ],
                         ),

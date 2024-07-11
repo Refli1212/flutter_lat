@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class FormWidget extends StatefulWidget {
-  FormWidget({Key? key}) : super(key: key);
+  const FormWidget({super.key});
 
   @override
   State<FormWidget> createState() => _FormWidgetState();
@@ -106,7 +106,7 @@ class _FormWidgetState extends State<FormWidget> {
                                 size: 24.0,
                                 color: Theme.of(context)
                                     .textTheme
-                                    .bodyText1!
+                                    .bodyLarge!
                                     .color,
                               ),
                             ),
@@ -115,14 +115,14 @@ class _FormWidgetState extends State<FormWidget> {
                             style: TextStyle(
                               fontSize: Theme.of(context)
                                   .textTheme
-                                  .bodyText2!
+                                  .bodyMedium!
                                   .fontSize,
                               fontFamily: Theme.of(context)
                                   .textTheme
-                                  .bodyText2!
+                                  .bodyMedium!
                                   .fontFamily,
                               color:
-                                  Theme.of(context).textTheme.bodyText2!.color,
+                                  Theme.of(context).textTheme.bodyMedium!.color,
                             ),
                             underline: Container(
                               height: 0,

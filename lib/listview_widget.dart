@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class ListViewWidget extends StatelessWidget {
-  ListViewWidget({Key? key}) : super(key: key);
+  ListViewWidget({super.key});
 
   final List<String> categories = [
     'All',

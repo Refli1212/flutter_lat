@@ -1,16 +1,18 @@
 import 'package:flutter/material.dart';
 
 class Tugas extends StatelessWidget {
+  const Tugas({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
+        title: const Text(
           'Percobaan Pertama',
         ),
         backgroundColor: Colors.red,
         leading: IconButton(
-          icon: Icon(Icons.settings),
+          icon: const Icon(Icons.settings),
           onPressed: () {},
         ),
         actions: const [
@@ -45,9 +47,9 @@ class Tugas extends StatelessWidget {
                           padding: const EdgeInsets.all(16),
                           width: 300,
                           height: 300,
-                          //menambahkan gambar
-                          ///child: Image.asset(''),
                           color: Colors.green,
+                          //menambahkan gambar
+                          child: Image.asset('assets/images/img1.jpg'),
                         ),
                         Container(
                           margin: const EdgeInsets.all(16),
@@ -55,8 +57,8 @@ class Tugas extends StatelessWidget {
                           width: 300,
                           height: 300,
                           //menambahkan gambar
-                          //child: Image.asset(''),
                           color: Colors.green,
+                          child: Image.asset('assets/images/img2.jpg'),
                         ),
                       ],
                     );
@@ -69,25 +71,25 @@ class Tugas extends StatelessWidget {
               ),
               Flexible(
                 child: ListView.builder(
-                  padding: EdgeInsets.all(16),
-                  physics: NeverScrollableScrollPhysics(),
+                  padding: const EdgeInsets.all(16),
+                  physics: const NeverScrollableScrollPhysics(),
                   shrinkWrap: true,
                   itemBuilder: (context, index) {
                     return Card(
                       child: ListTile(
-                        leading: CircleAvatar(
+                        leading: const CircleAvatar(
                           backgroundColor: Colors.blue,
                           child: Text(''),
                         ),
-                        title: Text('Judul'),
+                        title: const Text('Judul'),
                         subtitle: Row(
                           children: [
-                            Text('asik'),
-                            SizedBox(width: 12),
+                            const Text('asik'),
+                            const SizedBox(width: 12),
                             Icon(Icons.favorite, color: Colors.grey[800]),
                           ],
                         ),
-                        trailing: Icon(Icons.remove_circle),
+                        trailing: const Icon(Icons.remove_circle),
                       ),
                     );
                   },
